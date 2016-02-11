@@ -44,7 +44,7 @@ cormoran.naming('JSONP_CALLBACK');
 ### query
 
 ```js
-cormoran.query('&callback');
+cormoran.query('?callback');
 ```
 
 _Following the first example the final url would be *https://api.github.com/users/jeremenichelli&callback=JSONP_CALLBACK0*, a number will be added at the end of every callback name to make them unique._
