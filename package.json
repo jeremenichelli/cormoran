@@ -20,7 +20,7 @@
     "url": "https://github.com/jeremenichelli/cormoran/issues"
   },
   "homepage": "https://github.com/jeremenichelli/cormoran#readme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "prebuild": "npm run lint && mkdir -p dist",
