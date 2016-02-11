@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "eslint": "^1.10.3",
+    "ncp": "^2.0.0",
     "uglify-js": "^2.6.1"
   },
   "bugs": {
@@ -22,8 +23,8 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "prebuild": "npm run lint",
-    "build": "mkdir -p dist && ncp src/cormoran.js dist/cormoran.js & uglifyjs src/cormoran.js > dist/cormoran.min.js"
+    "prebuild": "npm run lint && mkdir -p dist",
+    "build": "ncp src/cormoran.js dist/cormoran.js & uglifyjs src/cormoran.js > dist/cormoran.min.js"
   },
   "keywords": [
     "jsonp",
