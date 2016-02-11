@@ -47,5 +47,12 @@ cormoran.naming('JSONP_CALLBACK');
 cormoran.query('&callback');
 ```
 
-_Following the first example the final url would be *https://api.github.com/users/jeremenichelli&callback=JSONP_CALLBACK0*, a number will be added at the end of every callback name to make them unique._
+<em>
+    Following the first example the final url would be <strong>https://api.github.com/users/jeremenichelli&callback=JSONP_CALLBACK0</strong>, a number will be added at the end of every callback name to make them unique.    
+</em>
+
+## Notes
+
+Since these library relies on Promises remember to include a polyfill for browsers which don't support this feature. I recommend Jake Archibald's Promise polyfill: https://github.com/jakearchibald/es6-promise
+
 
