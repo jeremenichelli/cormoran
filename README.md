@@ -51,6 +51,6 @@ _Following the first example the final url would be *https://api.github.com/user
 
 ## Notes
 
-Since these library relies on Promises remember to include a polyfill for browsers which don't support this feature. I recommend Jake Archibald's Promise polyfill: https://github.com/jakearchibald/es6-promise
+Since this library relies on Promises remember to include a polyfill for browsers which don't support this feature. I recommend this one https://github.com/jakearchibald/es6-promise developed by Jake Archibald.
 
 
