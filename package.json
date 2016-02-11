@@ -1,0 +1,36 @@
+{
+  "name": "cormoran",
+  "title": "cormoran",
+  "author": "Jeremias Menichelli",
+  "description": "Light weight library to manage JSONP calls using Promises",
+  "copyright": "2016",
+  "license": "MIT",
+  "main": "./dist/cormoran.js",
+  "url": "https://github.com/jeremenichelli/cormoran",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremenichelli/cormoran.git"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "uglify-js": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremenichelli/cormoran/issues"
+  },
+  "homepage": "https://github.com/jeremenichelli/cormoran#readme",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "prebuild": "npm run lint",
+    "build": "mkdir -p dist && ncp src/cormoran.js dist/cormoran.js & uglifyjs src/cormoran.js > dist/cormoran.min.js"
+  },
+  "keywords": [
+    "jsonp",
+    "cross domain",
+    "ajax",
+    "promises",
+    "load",
+    "scripts"
+  ]
+}
