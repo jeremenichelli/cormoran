@@ -1,6 +1,4 @@
-# cormoran
-
-[![Build Status](https://travis-ci.org/jeremenichelli/cormoran.svg)](https://travis-ci.org/jeremenichelli/cormoran)
+# cormoran [![Build Status](https://travis-ci.org/jeremenichelli/cormoran.svg)](https://travis-ci.org/jeremenichelli/cormoran)
 
 Light weight library to manage JSONP calls using Promises
 
@@ -52,5 +50,3 @@ _Following the first example the final url would be *https://api.github.com/user
 ## Notes
 
 Since this library relies on Promises remember to include a polyfill for browsers which don't support this feature. I recommend this one https://github.com/jakearchibald/es6-promise developed by Jake Archibald.
-
-

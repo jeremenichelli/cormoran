@@ -5,11 +5,11 @@
             return factory(root);
         });
     } else if (typeof exports === 'object') {
-        module.exports = factory;
+        module.exports = factory(root);
     } else {
         root.cormoran = factory(root);
     }
-})(this, function() {
+})(self, function(root) {
     'use strict';
 
     var cName,
@@ -29,8 +29,8 @@
             }
 
             var script = _doc.createElement('script'),
-                scope = window.cormoran,
-                scopeQuery = 'cormoran.',
+                scope = root,
+                scopeQuery = 'self.',
                 callbackId = cName + cNumber;
 
             // increase callback number
@@ -38,7 +38,7 @@
 
             function onScriptLoaded() { // eslint-disable-line func-style
                 // unable callback and data ref
-                scope[callbackId] = null;
+                delete scope[callbackId];
 
                 // erase script element
                 script.parentNode.removeChild(script);

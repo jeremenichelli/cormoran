@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "eslint src/**/*.js",
     "prebuild": "npm run lint && mkdir -p dist",
-    "build": "ncp src/cormoran.js dist/cormoran.js & uglifyjs src/cormoran.js > dist/cormoran.min.js"
+    "build": "ncp src/cormoran.js dist/cormoran.js"
   },
   "keywords": [
     "jsonp",
